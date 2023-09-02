@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(162, 217, 251);
+}
+
+.menuBar {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menuBar div {
+    padding: 2px;
+}
+
+.menuBar div:hover {
+    border: 2px solid rgb(94, 94, 255);
+    border-radius: 15px;
+}
+
+.active {
+    border: 2px solid rgb(94, 94, 255);
+    border-radius: 15px;
+}
+
+.btn {
+    border: none;
+    padding: 1.5vmin 3vmin;
+    color: navy;
+    font-size: 4.5vmin;
+    border-radius: 25px;
+}
+
+
+
+.container {
+    height: 80%;
+    position: relative;
+}
+
+/* hidden part */
+.hidden {
+    display: none;
+}
+
+.showingContent {
+    position: absolute;
+    min-height: 60vmin;
+    width: 70vmin;
+    left: 50%;
+    top: 10%;
+    border-radius: 8px;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 10;
+    box-shadow: 2px 1px 5px black;
+}
+
+.topLine {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cancleBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 2vmax;
+}
+
+.hedding {
+    width: 95%;
+    padding: 10px;
+    font-size: 4vmin;
+}
+
+.text {
+    width: 95%;
+    padding: 10px 0 5px 10px;
+    text-align: start;
+    font-size: 3vmin;
+}
+
+.overly {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.737);
+}
