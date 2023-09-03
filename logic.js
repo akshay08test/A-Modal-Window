@@ -17,10 +17,20 @@ function btnLogic(btn) {
     btn.parentElement.classList.toggle("active")
 }
 
-cancleBtn.addEventListener("click", () => {
+function hideModalWindow() {
     btns.forEach((btn) => {
         if (btn.parentElement.classList.contains("active")) {
             btnLogic(btn)
         }
     })
+}
+
+cancleBtn.addEventListener("click", () => {
+    hideModalWindow();
+})
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === 'Escape') {
+        hideModalWindow()
+    }
 })
